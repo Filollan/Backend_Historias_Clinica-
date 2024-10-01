@@ -1,35 +1,16 @@
-Métodos
+Métodos http
 
 GET
-http://localhost:3000
+http://localhost:3000/consultations
 
 POST
-http://localhost:3000/comprar_celular
+http://localhost:3000/consultations
 
 {
-  "imei": 1020,
-  "modelo": "11 PRO MAX",
-  "marca": "Iphone",
-  "precio": 2000000,
-  "propietario": {
-    "id_propietario": 100348451,
-    "nombres": "Johan Pinta"
-  },
-  "estaReportado": false
+    
+    "patient": "Alvaro Pito",
+    "gynecologist": "Dr. sebastian ",
+    "reason_for_consultation": "Dolor de cabeza",
+    "diagnosis": "se observa una presion alta"
 }
 
-POST
-http://localhost:3000/revender_celular
-
-{
-  "IMEI": 1020,
-  "precio": 121212,
-  "idPropietario": 111,
-  "nombreNuevoPropietario": "camilo"
-}
-
-GET
-http://localhost:3000/comprobar_robo/1020
-
-PUT
-http://localhost:3000/reportar_robo/1020/111
