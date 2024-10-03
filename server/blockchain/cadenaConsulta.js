@@ -141,7 +141,7 @@ export class CadenaConsulta {
         )
   
         if (consultaVerificada.hash !== consulta.hash) {
-          return false
+          return 'Modificada'
         }
   
         // Verificar la integridad de la cadena
@@ -152,7 +152,7 @@ export class CadenaConsulta {
           }
         }
   
-        return true
+        return 'No modificada'
       } catch (error) {
         throw new Error(error.message)
       }

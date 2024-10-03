@@ -27,5 +27,6 @@ routerConsultas.delete('/:diagnosisHash', deleteConsulta)
 //encontrar consulta por consulta
 routerConsultas.get('/:diagnosisHash', findConsulta)
 
-//verificar si la consulta a sido modificada
+//verificar si la consulta a sido modificada                
 routerConsultas.get('/verificar/:hash', verificarIntegridad)
+
